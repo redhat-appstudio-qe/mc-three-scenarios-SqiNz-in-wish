@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-docker-python-rhtap-three-component-scenarios-gepo
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-pwjl-tenant/mc-three-scenarios/devfile-docker-python-rhtap-three-component-scenarios-gepo@sha256:e78082d65e021bbd0fb0e13bb1b354bddba47ad78be8d1626e8240838b618060
+        name: my-python
+        resources: {}
+status: {}
